@@ -1,0 +1,20 @@
+<?php
+/**
+ * BitLoop / Google Tag Manager / Block / DataLayer
+ * @see BitLoop_GoogleTagManager_Block_DataLayer
+ *
+ * @category    design
+ * @package     base_default
+ * @copyright   Copyright (c) 2015 BitLoop Limited (www.bitloop.co.uk)
+ * @license     BitLoop License
+ */
+?>
+<!-- Google Tag Manager -->
+<script>
+    dataLayer = [<?php echo $this->getJsonDataLayer() ?>];
+</script>
+
+<?php // We include the noscript tag in here so we can populate it with the data layer parameters ?>
+<noscript><iframe src="//www.googletagmanager.com/ns.html?id=<?php echo $this->getContainerId(); ?>&<?php echo http_build_query($this->getDataLayer()) ?>"
+                  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+

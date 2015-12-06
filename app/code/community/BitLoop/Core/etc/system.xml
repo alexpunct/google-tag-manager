@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+    <tabs>
+        <bitloop_core translate="label" module="bitloop_core">
+            <label>BitLoop</label>
+            <sort_order>25</sort_order>
+        </bitloop_core>
+    </tabs>
+</config>

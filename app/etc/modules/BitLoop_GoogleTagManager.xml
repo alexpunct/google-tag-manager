@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <BitLoop_GoogleTagManager>
+            <active>true</active>
+            <codePool>community</codePool>
+            <depends>
+                <BitLoop_Core/>
+
+            </depends>
+        </BitLoop_GoogleTagManager>
+    </modules>
+</config>

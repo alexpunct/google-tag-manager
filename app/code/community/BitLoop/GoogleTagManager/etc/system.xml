@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+    <sections>
+        <bitloop_googletagmanager translate="label" module="bitloop_googletagmanager">
+            <label>Google Tag Manager</label>
+            <tab>bitloop_core</tab>
+            <sort_order>10</sort_order>
+            <show_in_default>1</show_in_default>
+            <show_in_website>1</show_in_website>
+            <show_in_store>1</show_in_store>
+            <groups>
+                <configuration translate="label">
+                    <label>General Configuration</label>
+                    <frontend_type>text</frontend_type>
+                    <expanded>1</expanded>
+                    <sort_order>10</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+                        <enable>
+                            <label>Enable</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>10</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </enable>
+                        <container_id translate="label comment">
+                            <label>Container ID</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>20</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <comment>
+                                <![CDATA[Google Tag Manager container id (Example: GTM-XXXX)]]>
+                            </comment>
+                            <depends>
+                                <enable>1</enable>
+                            </depends>
+                        </container_id>
+                    </fields>
+                </configuration>
+                <data_layer translate="label">
+                    <label>Data Layer Configuration</label>
+                    <frontend_type>text</frontend_type>
+                    <expanded>0</expanded>
+                    <sort_order>20</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <comment>
+                        <![CDATA[Here you can configure the dataLayer array. This contains the data passed from Magento to GTM. <br>You shouldn't have to change anything unless you know what you are doing.]]>
+                    </comment>
+                    <fields>
+                        <magento_context>
+                            <label>Send Magento Context data</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>10</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <comment>
+                                <![CDATA[Send the request data, like Magento module/controller/action name and customer group id. Can be used to filter each request (for example target all category/product/cms pages or a specific customer group.]]>
+                            </comment>
+                        </magento_context>
+                        <category_page>
+                            <label>Category page data</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>20</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <comment>
+                                <![CDATA[Send the category details when on category page.]]>
+                            </comment>
+                        </category_page>
+                        <product_page>
+                            <label>Product page data</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>30</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <comment>
+                                <![CDATA[Send the product details when on product page.]]>
+                            </comment>
+                        </product_page>
+                        <order_success>
+                            <label>Order Success page data</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>40</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <comment>
+                                <![CDATA[Send the transaction details on the order success page. Required for Google Analytics - Ecommerce tracking.]]>
+                            </comment>
+                        </order_success>
+                    </fields>
+                </data_layer>
+            </groups>
+        </bitloop_googletagmanager>
+    </sections>
+</config>

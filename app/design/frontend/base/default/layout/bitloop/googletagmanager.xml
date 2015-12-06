@@ -1,0 +1,70 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Google Tag Manager
+ *
+ * @category    design
+ * @package     base_default
+ * @copyright   Copyright (c) 2015 BitLoop Limited (www.bitloop.co.uk)
+ * @license     BitLoop License
+ */
+-->
+<layout version="0.1.0">
+
+    <!--
+    Default layout, loads most of the pages
+    -->
+    <default>
+        <!-- Container Script -->
+        <reference name="after_body_start">
+            <block type="bitloop_googletagmanager/dataLayer" name="bitloop_googletagmanager.data_layer" template="bitloop/googletagmanager/data_layer.phtml"/>
+            <block type="bitloop_googletagmanager/script" name="bitloop_googletagmanager.script" template="bitloop/googletagmanager/script.phtml"/>
+        </reference>
+
+    </default>
+
+    <!--
+    Category page layout - non-anchor categories (no left navigation)
+    -->
+    <catalog_category_default>
+        <reference name="bitloop_googletagmanager.data_layer">
+            <block type="bitloop_googletagmanager/dataLayer_category" name="bitloop_googletagmanager.data_layer.category" as="bl_gtm_dl_category"/>
+        </reference>
+    </catalog_category_default>
+
+    <!--
+    Category page layout - anchor categories (with left navigation)
+    -->
+    <catalog_category_layered>
+        <reference name="bitloop_googletagmanager.data_layer">
+            <block type="bitloop_googletagmanager/dataLayer_category" name="bitloop_googletagmanager.data_layer.category" as="bl_gtm_dl_category"/>
+        </reference>
+    </catalog_category_layered>
+
+    <!--
+    Product page layout - all product types
+    -->
+    <catalog_product_view>
+        <reference name="bitloop_googletagmanager.data_layer">
+            <block type="bitloop_googletagmanager/dataLayer_product" name="bitloop_googletagmanager.data_layer.product" as="bl_gtm_dl_product"/>
+        </reference>
+    </catalog_product_view>
+
+    <!--
+    Order Success Page (multishipping checkout)
+    -->
+    <checkout_multishipping_success>
+        <reference name="bitloop_googletagmanager.data_layer">
+            <block type="bitloop_googletagmanager/dataLayer_orderSuccess" name="bitloop_googletagmanager.data_layer.order_success" as="bl_gtm_dl_order_success"/>
+        </reference>
+    </checkout_multishipping_success>
+
+    <!--
+    Order Success Page (one step checkout)
+    -->
+    <checkout_onepage_success>
+        <reference name="bitloop_googletagmanager.data_layer">
+            <block type="bitloop_googletagmanager/dataLayer_orderSuccess" name="bitloop_googletagmanager.data_layer.order_success" as="bl_gtm_dl_order_success"/>
+        </reference>
+    </checkout_onepage_success>
+</layout>

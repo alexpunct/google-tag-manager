@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <BitLoop_Core>
+            <version>0.1.0</version>
+        </BitLoop_Core>
+    </modules>
+
+    <global>
+        <helpers>
+            <bitloop_core>
+                <class>BitLoop_Core_Helper</class>
+            </bitloop_core>
+        </helpers>
+    </global>
+</config>

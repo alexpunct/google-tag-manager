@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <BitLoop_GoogleTagManager>
+            <version>1.0.0</version>
+        </BitLoop_GoogleTagManager>
+    </modules>
+
+    <global>
+        <blocks>
+            <bitloop_googletagmanager>
+                <class>BitLoop_GoogleTagManager_Block</class>
+            </bitloop_googletagmanager>
+        </blocks>
+
+        <helpers>
+            <bitloop_googletagmanager>
+                <class>BitLoop_GoogleTagManager_Helper</class>
+            </bitloop_googletagmanager>
+        </helpers>
+    </global>
+
+    <frontend>
+        <layout>
+            <updates>
+                <bitloop_googletagmanager>
+                    <file>bitloop/googletagmanager.xml</file>
+                </bitloop_googletagmanager>
+            </updates>
+        </layout>
+    </frontend>
+
+    <default>
+        <bitloop_googletagmanager>
+            <data_layer>
+                <order_success>1</order_success>
+            </data_layer>
+        </bitloop_googletagmanager>
+    </default>
+</config>
