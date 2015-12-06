@@ -15,7 +15,7 @@ Tested on Magento Community Edition 1.x.
 	* Product Page data (default *disabled*)
 	* Order Success page (default ***enabled***)
 	
-A demo of the module implemented can be found here in the (Bitloop Sandbox)[http://sandbox.bitloop.co.uk]. You can inspect the page using firebug and search for `Google Tag Manager`.
+A demo of the module implemented can be found here: http://sandbox.bitloop.co.uk. You can inspect the page using firebug and search for `Google Tag Manager`.
 	
 ### 2. Installation
 
