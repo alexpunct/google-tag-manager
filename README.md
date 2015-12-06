@@ -11,7 +11,7 @@ Tested on Magento Community Edition 1.x.
 
 * dataLayer implementation:
 
-	* Magento context sent via dataLayer (default *disabled*):
+	* Magento context sent via dataLayer (default *disabled*)
 	
 		* **magentoModule** - the request module name (example: `catalog` for product and category pages, `checkout` for cart and checkout, `cms` for homepage or other CMS pages)
     	* **magentoController** - the request controller name (example: `product` for product pages, `category` for category pages, `cart` for cart, `onepage` for one page checkout, `index` for homepage)
@@ -77,15 +77,15 @@ Your Google Tag Manager Container ID. Provided by Google when you create a new c
 
 * Send Magento Context data (default No)
 
-    When set to Yes, it sends to GTM custom parameters about each page view that you can capture, analyse or use them as triggers in GTM. The variables are explained below:
+    When set to Yes, it sends to GTM custom parameters about each page view that you can capture, analyse or use them as triggers in GTM
 
 * Category page data (default No)
 
-    Send to GTM the data associated with the current category when on a category page:
+    Send to GTM the data associated with the current category when on a category page
 
 * Product page data (default No)
 
-    Send to GTM the data associated with the current product when on a product page:
+    Send to GTM the data associated with the current product when on a product page
 
 * Order Success page (default Yes). 
 
