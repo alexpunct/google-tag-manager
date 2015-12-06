@@ -32,14 +32,17 @@ The configuration is located in `System > Configuration > BitLoop > Google Tag M
 ##### 3.1 General Configuration
 
 * Enabled (default No)
+
 Whether to enable Google Tag Manager on your website/store
 
 * Container ID
+
 Your Google Tag Manager Container ID. Provided by Google when you create a new container inside GTM. Recommended is to have one container even if you have multiple domains.
 
 ##### 3.2 Data Layer Configuration
 
 * Send Magento Context data (default No)
+
 When set to Yes, it sends to GTM custom parameters about each page view that you can capture, analyse or use them as triggers in GTM. The variables are explained below:
 
 	* magentoModule - the request module name (example: `catalog` for product and category pages, `checkout` for cart and checkout, `cms` for homepage or other CMS pages)
@@ -51,6 +54,7 @@ When set to Yes, it sends to GTM custom parameters about each page view that you
 	* locale - the locale code for the current store (example: `en_GB`)
 
 * Category page data (default No)
+
 Send to GTM the data associated with the current category when on a category page:
 
 	* categoryId - the category id (example: `10`)
@@ -62,6 +66,7 @@ Send to GTM the data associated with the current category when on a category pag
 	* pageCategory - current section (hardcoded to `category`). You can also use this to filter only category pages in GTM
 	
 * Product page data (default No)
+
 Send to GTM the data associated with the current product when on a product page:
 
 	* productId - the product id (example: `111`)
@@ -74,6 +79,7 @@ Send to GTM the data associated with the current product when on a product page:
 	* pageCategory - current section (hardcoded to `product`). You can also use this to filter only product pages in GTM 
 	
 * Order Success page (default Yes). 
+
 Send to GTM transaction data once the order has been placed. **This IS compatible with Google Analytics Ecommerce tracking.**
 
 	* transactionId - the Magento order increment id (example: `145000018`)
@@ -88,7 +94,9 @@ Send to GTM transaction data once the order has been placed. **This IS compatibl
 ### 4. License, Contributions and Support
 
 This module is free to use and modify as you please. 
+
 If you want to contribute to this project, please email support.
+
 If you have any special requests or you need custom configuration or installation please email support.
 
 Any support issues can be submitted to support@bitloop.co.uk.
