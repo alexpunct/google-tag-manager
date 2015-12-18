@@ -101,13 +101,15 @@ If you have any special requests or you need custom configuration or installatio
 
 Any support issues can be submitted to support@bitloop.co.uk.
 
-### 5. Upcoming features
+### 5. Upcoming features and fixes
+
+* Universal analytics enhanced E-commerce support
+
+* Set the numeric values as integers
+
+* Deploy via magento connect
 
 * Ability to choose in the config which fields you send individually
-
-* Load the fields from the configuration to make it easier to add new sections/fields
-
-* New sections and fields to pass more data to GTM
 
 * Events integration
 
